@@ -1,0 +1,90 @@
+/* Add this to your CSS file */
+
+/* Styles for the search bar */
+input[type="text"] {
+    border-radius: 20px; /* Rounded corners for the search bar */
+    border: 1px solid #ced4da; /* Border color */
+    padding: 10px 15px; /* Padding for the input */
+    font-size: 14px; /* Font size */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus effects */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Styles for the button */
+.btn-primary {
+    border-radius: 20px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Styles for task cards */
+.task-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition for hover effects */
+}
+
+.task-card:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Styles for status indicator */
+.task-status-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 3px solid transparent;
+    margin-right: 10px; /* Space between status indicator and task name */
+}
+
+/* Styles for icon buttons */
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #495057;
+    cursor: pointer;
+    margin-left: 10px; /* Space between icons */
+    transition: color 0.2s; /* Transition for icon color change */
+}
+
+.icon-btn:hover {
+    color: #007bff; /* Color on hover */
+}
+
+.icon-btn.delete {
+    color: #e74c3c; /* Red color for delete icon */
+}
+
+.icon-btn.delete:hover {
+    color: #c0392b; /* Darker red on hover */
+}
+
+/* Styles for task label and name */
+.task-label {
+    font-size: 12px; /* Font size for label */
+    color: #6c757d; /* Gray color for label */
+}
+
+.task-name {
+    font-size: 16px; /* Font size for task name */
+    font-weight: bold; /* Bold for task name */
+    color: #343a40; /* Dark color for task name */
+}
